@@ -1,0 +1,23 @@
+// defines.h
+
+#ifndef _DEFINES_H
+#define _DEFINES_H
+
+#define READBIT(WORD, BITSTARTPOS) ((WORD>>BITSTARTPOS)&1)
+#define READNIBBLE(WORD, NIBBLESTARTPOS) ((WORD>>NIBBLESTARTPOS)&0xF)
+#define READBYTE(WORD, BYTESTARTPOS) ((WORD>>BYTESTARTPOS)&0xFF)
+
+#define WRITEBIT(WORD,BITPOS,BIT) \
+        WORD=((WORD&~(1<<BITPOS))|(((BIT<<BITPOS))))
+#define WRITENIBBLE(WORD,NIBBLESTARTBITPOS,VAL) \
+        WORD=((WORD&~(15<<NIBBLESTARTBITPOS))| \
+		          (((VAL&15)<<NIBBLESTARTBITPOS)))
+#define WRITEBYTE(WORD,BYTESTARTBITPOS,VAL) \
+        WORD=((WORD&~(255<<BYTESTARTBITPOS))| \
+		          (((VAL&255)<<BYTESTARTBITPOS)))
+				  
+				  
+#define CFG_PORT_PIN(PINSEL, pinNo, pinFunc) \
+		PINSEL=((PINSEL &~(3<<((pinNo%16)*2))) | (pinFunc<<((pinNo%16)*2)))
+
+#endif

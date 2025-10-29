@@ -6,7 +6,7 @@ The main objective of this project is to design and implement an embedded system
 --- 
 ## Block Diagram 
 
-![CAN Controlled Automotive Info Display](https://private-user-images.githubusercontent.com/65908099/506727615-1ad40234-ad39-4bd5-9814-47ddc8ff6657.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE2NzY4MTEsIm5iZiI6MTc2MTY3NjUxMSwicGF0aCI6Ii82NTkwODA5OS81MDY3Mjc2MTUtMWFkNDAyMzQtYWQzOS00YmQ1LTk4MTQtNDdkZGM4ZmY2NjU3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI4VDE4MzUxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMwY2UxNTMxZmFlNmVmNGJiZGE4YzE3MmRiNDNiNzk4MmU4MTVlYWZjMzVjNDMxN2VkOGRjYzAxNjllMmJmOTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.CLFIncIjS9XMFK1NEjUCFOeoV3tZKv-1l8I2AezzP1o) 
+<img width="1027" height="686" alt="image" src="https://github.com/user-attachments/assets/3cea7961-f7e8-4802-8b07-6225ec0ff9da" />
 
 --- 
 ## MAIN NODE 

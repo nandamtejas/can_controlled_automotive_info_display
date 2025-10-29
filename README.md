@@ -11,7 +11,7 @@ The main objective of this project is to design and implement an embedded system
 --- 
 ## MAIN NODE 
 
-The `MAIN NODE` acts as the Central Dashboard display. It continuously reads the engine temperature and RTC values, and displays them on LCD. It also receives fuel level information upon requesting the `FUEL NODE` via the CAN bus and shows the fuel percentage on the LCD. It also receives Fuel level information from `FUEL NODE` via CAN bus and shows the fuel percentage on the LCD. Additionally, The `MAIN NODE` handles the left and right indicator switch inputs, sends their status to the `INDICATOR NODE` via same CAN bus,and updates the indicator status on display. 
+The `MAIN NODE` acts as the Central Dashboard display. It continuously reads the engine temperature and RTC values, and displays them on LCD. It also receives fuel level information upon requesting the `FUEL NODE` via the CAN bus and shows the fuel percentage on the LCD. Additionally, The `MAIN NODE` handles the left and right indicator switch inputs, sends their status to the `INDICATOR NODE` via same CAN bus,and updates the indicator status on display. 
 
 --- 
 ## INDICATOR NODE 

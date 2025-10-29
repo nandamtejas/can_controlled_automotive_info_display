@@ -11,7 +11,7 @@ The main objective of this project is to design and implement an embedded system
 --- 
 ## MAIN NODE 
 
-The `MAIN NODE` acts as the Central Dashboard display. It also receives fuel level information upon requesting the `FUEL NODE` via the CAN bus and shows the fuel percentage on the LCD. It also receives Fuel level information from `FUEL NODE` via CAN bus and shows the fuel percentage on the LCD. Additionally, The `MAIN NODE` handles the left and right indicator switch inputs, sends their status to the `INDICATOR NODE` via same CAN bus,and updates the indicator status on display. 
+The `MAIN NODE` acts as the Central Dashboard display. It continuously reads the engine temperature and RTC values, and displays them on LCD. It also receives fuel level information upon requesting the `FUEL NODE` via the CAN bus and shows the fuel percentage on the LCD. It also receives Fuel level information from `FUEL NODE` via CAN bus and shows the fuel percentage on the LCD. Additionally, The `MAIN NODE` handles the left and right indicator switch inputs, sends their status to the `INDICATOR NODE` via same CAN bus,and updates the indicator status on display. 
 
 --- 
 ## INDICATOR NODE 
@@ -21,7 +21,7 @@ The `INDICATOR NODE` is responsible for controlling the vehicle's left and right
 --- 
 ## FUEL NODE 
 
-The `FUEL NODE` is dedicated to monitoring the vehicle’s fuel level. Using the on-chip ADC, it continuously samples the fuel sensor signal and calculates the fuel percentage. The `FUEL NODE` now sends the fuel level information only upon request from the `MAIN NODE`. When the MAIN NODE sends a CAN message with the `Remote Transmission Request (RTR = 1)` bit set, the FUEL NODE responds by transmitting the current fuel data via the CAN bus. This ensures efficient communication and avoids unnecessary bus traffic. 
+The `FUEL NODE` is dedicated to monitoring the vehicle’s fuel level. Using the on-chip ADC, it continuously samples the fuel sensor signal and calculates the fuel percentage. The `FUEL NODE` now sends the fuel level information to the `MAIN NODE` upon request from the `MAIN NODE` by receiving a CAN message with the `Remote Transmission Request (RTR = 1)`. Then the `FUEL NODE` responds by transmitting the current fuel data via the CAN bus ensuring efficient communication and avoiding unnecessary bus traffic. 
 
 --- 
 ## Components 
